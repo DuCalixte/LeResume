@@ -1,0 +1,29 @@
+{
+  "name": "Le Resume",
+  "version": "0.0.0",
+  "homepage": "https://github.com/DuCalixte/LeResume",
+  "authors": [
+    "Stanley Calixte <DuCalixte@gmail.com>"
+  ],
+  "description": "My resume writtent in javascript",
+  "main": "index.html",
+  "keywords": [
+    "resume",
+    "ducalixte",
+    "react",
+    "reactjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "react": "~0.13.3",
+    "google-maps": "~3.0.0"
+  }
+}
