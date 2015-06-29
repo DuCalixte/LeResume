@@ -1,0 +1,54 @@
+{
+    "about": {
+        "name": "Stanley Calixte",
+        "email": "scalixte@gmail.com",
+        "phone": "917-499-5182",
+        "location": "Brooklyn, NY",
+        "portrait": "",
+        "avatar": "",
+        "github": [
+            "ducalixte",
+            "scalixte-mdsol"
+        ],
+        "blog": "",
+        "role": "Full Stack Developer",
+        "message": "Hi, I am Stanley, and I love solving problems.",
+        "skills": [
+            "ruby",
+            "rails",
+            "senatra",
+            "sql",
+            "oracle",
+            "python",
+            "html",
+            "css",
+            "javascript",
+            "objective c",
+            "swift",
+            "java",
+            "c#",
+            "mongo db"
+        ],
+        "spoken": [
+            "english",
+            "french",
+            "creole"
+        ]
+    },
+    "summary": {
+        "title": "Life is #good, knowlege is #awesome",
+        "statement": [
+            "I am an engineer in life and professionally",
+            "I love investigating codes, I see personality in codes, I strive to code better through learning and reading codes",
+            "I am a hard work, my approach is work hard to arrive at a smart yet eloquent solution to a problem.",
+            "I bring a wide variety of skills and professional experiences to a team.",
+            "My goal is to solve problems and make changes that benefit the company, my peers and thus make be a better developer and person."
+        ]
+    },
+    "education": [],
+    "certification": [],
+    "experiences": [],
+    "projects": [],
+    "interests": {},
+    "technologies": {}
+}
