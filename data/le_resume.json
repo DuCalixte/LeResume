@@ -5,14 +5,50 @@
         "phone": "917-499-5182",
         "location": "Brooklyn, NY",
         "portrait": "",
-        "avatar": "",
+        "gravatar": "http://www.gravatar.com/avatar/919b316ae2edcd21cc494e439d56b750",
         "github": [
             "ducalixte",
             "scalixte-mdsol"
         ],
+        "social":[
+            {
+                "network": "email",
+                "account": "scalixte@gmail.com"
+                },
+            {
+                "network": "Location",
+                "account": "Brooklyn, NY"
+                },
+            {
+                "network": "Linkedin",
+                "account": "Stanley Calixte"
+                },
+            {
+                "network": "github",
+                "account": "ducalixte"
+                },
+            {
+                "network": "github",
+                "account": "salixte-mdsol"
+                }
+        ],
         "blog": "",
         "role": "Full Stack Developer",
-        "message": "Hi, I am Stanley, and I love solving problems.",
+        "statement": "Hi, I am Stanley, and I love solving problems.",
+        "key-skills": [
+            "Rails",
+            "Javascript",
+            "Senatra",
+            "Scrum",
+            "Gherkin",
+            "Behavior Driven Development",
+            "Test Driven Development",
+            "Domain Driven Development",
+            "Static Analysis",
+            "Continuous Integration",
+            "Continuous Delivery",
+            "Docker"
+        ],
         "skills": [
             "ruby",
             "rails",
