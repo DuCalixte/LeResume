@@ -24,6 +24,7 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "react": "~0.13.3",
-    "google-maps": "~3.0.0"
+    "google-maps": "~3.0.0",
+    "es5-shim": "~4.1.7"
   }
 }
