@@ -22,6 +22,7 @@ var Resume = React.createClass({
 		return (
         <div className="main container-fluid" url={this.props.url}>
             <About about={data.about} />
+            <NavBar />
         </div>);
 	}
 });
