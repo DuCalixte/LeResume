@@ -83,7 +83,36 @@
     },
     "education": [],
     "certification": [],
-    "experiences": [],
+    "experiences": [
+        {
+            "company": "Medidata Solutions",
+            "role": "Software Engineer in Test",
+            "location": "New York, NY",
+            "period": "December 2013 - Present",
+            "duties": ""
+        },
+        {
+            "company": "Getty Images",
+            "role": "Software Engineer in Test",
+            "location": "New York, NY",
+            "period": "January 2013 - November 2013",
+            "duties": ""
+        },
+        {
+            "company": "International Gaming Technology",
+            "role": "Lead Software Engineer in Test",
+            "location": "Las Vegas, NV",
+            "period": "2006-2012",
+            "duties": ""
+        },
+        {
+            "company": "Progressive Gaming Corporation",
+            "role": "Quality Assurance Engineer",
+            "location": "Las Vegas, NV",
+            "period": "2005-2006",
+            "duties": "Principally my role consisted of assuring that both Hardware and Software system meet industry standards. I verified that the entire Product delivery is functional and ready through various processes including manual and automated tests."
+        }
+    ],
     "projects": [],
     "interests": {},
     "technologies": {}
