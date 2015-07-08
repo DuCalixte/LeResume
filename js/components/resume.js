@@ -24,6 +24,7 @@ var Resume = React.createClass({
             <About about={data.about} />
             <NavBar />
             <WorkExperience experiences={data.experiences}/>
+            <LivingLocations locations={data.locations} />
         </div>);
 	}
 });

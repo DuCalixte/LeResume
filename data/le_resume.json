@@ -113,6 +113,25 @@
             "duties": "Principally my role consisted of assuring that both Hardware and Software system meet industry standards. I verified that the entire Product delivery is functional and ready through various processes including manual and automated tests."
         }
     ],
+    "locations": [
+        {
+            "address": "Philadelphia, PA"
+        },{
+            "address": "Petaluma, CA"
+        },{
+            "address": "Santa Rosa, CA"
+        },{
+            "address": "San Diego, CA"
+        },{
+            "address": "La Jolla, CA"
+        },{
+            "address": "Las Vegas, NV"
+        },{
+            "address": "New York, NY"
+        },{
+            "address": "Port-au-Prince, Haiti"
+        }
+    ],
     "projects": [],
     "interests": {},
     "technologies": {}
