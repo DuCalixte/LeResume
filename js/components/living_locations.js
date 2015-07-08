@@ -1,39 +1,6 @@
 /** @jsx React.DOM */
 'use strict;'
 
-// var LivingLocations = React.createClass({
-//     getDefaultProps: function () {
-//         return {
-//             initialZoom: 8,
-//             mapCenterLat: 43.6425569,
-//             mapCenterLng: -79.4073126,
-//         };
-//     },
-//     componentDidMount: function (rootNode) {
-//         var mapOptions = {
-//             center: this.mapCenterLatLng(),
-//             zoom: this.props.initialZoom
-//         },
-//         map = new google.maps.Map(this.getDOMNode(), mapOptions);
-//         var marker = new google.maps.Marker({
-//             position: this.mapCenterLatLng(),
-//             title: 'Hi',
-//             map: map
-//         });
-//         this.setState({
-//             map: map
-//         });
-//     },
-//     mapCenterLatLng: function () {
-//         var props = this.props;
-//         return new google.maps.LatLng(props.mapCenterLat, props.mapCenterLng);
-//     },
-//     render: function () {
-//         return ( < div className = 'map-gic' > < /div>
-//         );
-//     }
-// });
-
 var LivingLocations = React.createClass({
 	getDefaultProps: function() {
         return {locations: []};
@@ -61,14 +28,39 @@ var LivingLocations = React.createClass({
 var GMap = React.createClass({
 	getDefaultProps: function(){
 		return {
-			initialZoom: 5,
+			initialZoom: 4,
 			mapOptions: {},
-			map: null
+			map: null,
+			google: null
 		};
 	},
 	createMap: function(){},
 	createMarker: function(){
 		var places = this.props.addresses;
+	},
+	updateMap: function(){
+		var places = this.props.addresses;
+		var map = this.props.map;
+		var google = this.props.google;
+		var bounds = new google.maps.LatLngBounds();
+
+		places.map(function(place, index){
+			var service = new google.maps.places.PlacesService(map);
+			var request = {
+				query: place
+			};
+			service.textSearch(request, function(results, status){
+				if (status == google.maps.places.PlacesServiceStatus.OK){
+					var marker = new google.maps.Marker({
+						map: map,
+						position: results[0].geometry.location,
+						title: results[0].formatted_address
+					});
+					bounds.extend(new google.maps.LatLng(results[0].geometry.location.lat(),results[0].geometry.location.lng()));
+					map.fitBounds(bounds);
+				}
+			});
+		});
 	},
 	componentWillMount: function(){
 		var initialZoom = this.props.initialZoom;
@@ -76,16 +68,18 @@ var GMap = React.createClass({
             scrollwheel: false,
         	disableDefaultUI: true,
             zoom: initialZoom,
-            sensor: true,
-            libraries: ['geometry', 'places']
+            sensor: true
         };
 	},
 	componentDidMount: function(){
 		var mapOptions = this.props.mapOptions;
 		var self = this;
+		GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
 		GoogleMapsLoader.load(function(google) {
 			mapOptions.center = new google.maps.LatLng(-34.397, 150.644);
 			self.props.map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+			self.props.google = google;
+			self.updateMap();
 		}); 
 	},
 	render: function(){
