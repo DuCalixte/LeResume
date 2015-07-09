@@ -29,7 +29,7 @@
                 },
             {
                 "network": "github",
-                "account": "salixte-mdsol"
+                "account": "scalixte-mdsol"
                 }
         ],
         "blog": "",
@@ -81,8 +81,45 @@
             "My goal is to solve problems and make changes that benefit the company, my peers and thus make be a better developer and person."
         ]
     },
-    "education": [],
-    "certification": [],
+    "universities": [
+        {
+            "university": "University of California, San Diego",
+            "location": "La Jolla, CA",
+            "degree": "Electrical Engineer",
+            "years": "2002-2005",
+            "graduated": "June 2005"
+        },
+        {
+            "university": "University of California, San Diego",
+            "location": "La Jolla, CA",
+            "degree": "Applied Mathematics",
+            "years": "2002-2005",
+            "graduated": "June 2005"
+        }
+    ],
+    "certifications": [
+        {
+            "university": "University of California, San Diego",
+            "category": "online",
+            "location": "La Jolla, CA",
+            "certification": "Java Programming",
+            "years": "2011-2012"
+        },
+        {
+            "university": "University of California, San Diego",
+            "category": "online",
+            "location": "La Jolla, CA",
+            "certification": "IOS Programming",
+            "years": "2013-2014"
+        },
+        {
+            "university": "Udacity",
+            "category": "online",
+            "location": "La Jolla, CA",
+            "certification": "Full Stack Web Developer Nanodegree",
+            "years": "2015-Present"
+        }
+    ],
     "experiences": [
         {
             "company": "Medidata Solutions",
@@ -111,6 +148,13 @@
             "location": "Las Vegas, NV",
             "period": "2005-2006",
             "duties": "Principally my role consisted of assuring that both Hardware and Software system meet industry standards. I verified that the entire Product delivery is functional and ready through various processes including manual and automated tests."
+        },
+        {
+            "company": "Santa Rosa Junior Computer Information Science",
+            "role": "Computer Technologist",
+            "location": "Santa Rosa, CA",
+            "period": "2000-2002",
+            "duties": "Assisted in the conceptual and strategic creation of integrated GUI Websites and Web Solutions using HTML, DHTML, CSS and Action Scripts. Provided end-user support resolving complex software, hardware, network implementations, communications, and operating systems issues."
         }
     ],
     "locations": [
