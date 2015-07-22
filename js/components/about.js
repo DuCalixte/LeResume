@@ -34,7 +34,7 @@ var About = React.createClass({
 						</blockquote>
 					<div>
 						<h2>Skills at a Glance:</h2>
-						<ul className="list-unstyled key-skills">
+						<ul className="list-unstyled key-skills fix-col fix-col-3">
 							{key_skills.map(function(skill,i){
 								return <li className="skill-item">{skill}</li>;
 							})}

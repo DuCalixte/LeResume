@@ -2,16 +2,11 @@
 'use strict;'
 
 var Resume = React.createClass({
-    getDefaultProps: function(){
-        return {
-            interval: 14400
-        };
-    },
     loadResumeData: function() {
         $.ajax({
             url: this.props.url,
             dataType: 'json',
-            cache: false,
+            cache: true,
             success: function(data) {
               this.setState({data: data});
             }.bind(this),
@@ -25,8 +20,6 @@ var Resume = React.createClass({
     },
     componentWillMount: function() {
         this.loadResumeData();
-        console.log(this.props.interval);
-        setInterval(this.loadResumeData, this.props.interval);
     },
 	render: function(){
         var data=this.state.data;
@@ -36,6 +29,7 @@ var Resume = React.createClass({
             <NavBar />
             <WorkExperience experiences={data.experiences}/>
             <Education universities={data.universities} certifications={data.certifications} />
+            <CoreSkills technologies={data.technologies} skills={data["programming skills"]} />
             <LivingLocations locations={data.locations} />
         </div>);
 	}

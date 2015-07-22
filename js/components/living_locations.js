@@ -13,10 +13,10 @@ var LivingLocations = React.createClass({
     		self.props.locations.map(function(location, index){addresses.push(location.address);})
     	})();
 
-    	var divStyle = {height: 500};
+    	var divStyle = {height: '500px'};
     	return (
-    		<div className="panel panel-default">
-    			<div className="<panel></panel>-heading"><h2 className="panel-title">Places Where I have lived and worked</h2></div>
+    		<div className="panel panel-info" id="locations">
+    			<div className="panel panel-heading"><h2 className="panel-title">Places Where I have lived and worked</h2></div>
     			<div className="panel-body" style={divStyle}>
     				<GMap addresses={addresses}/>
     			</div>
