@@ -1,182 +1,553 @@
 {
-    "about": {
-        "name": "Stanley Calixte",
-        "email": "scalixte@gmail.com",
-        "phone": "917-499-5182",
-        "location": "Brooklyn, NY",
-        "portrait": "",
-        "gravatar": "http://www.gravatar.com/avatar/919b316ae2edcd21cc494e439d56b750",
-        "github": [
-            "ducalixte",
-            "scalixte-mdsol"
-        ],
-        "social":[
-            {
-                "network": "email",
-                "account": "scalixte@gmail.com"
-                },
-            {
-                "network": "Location",
-                "account": "Brooklyn, NY"
-                },
-            {
-                "network": "Linkedin",
-                "account": "Stanley Calixte"
-                },
-            {
-                "network": "github",
-                "account": "ducalixte"
-                },
-            {
-                "network": "github",
-                "account": "scalixte-mdsol"
-                }
-        ],
-        "blog": "",
-        "role": "Full Stack Developer",
-        "statement": "Hi, I am Stanley, and I love solving problems.",
-        "key-skills": [
-            "Rails",
-            "Javascript",
-            "Senatra",
-            "Scrum",
-            "Gherkin",
-            "Behavior Driven Development",
-            "Test Driven Development",
-            "Domain Driven Development",
-            "Static Analysis",
-            "Continuous Integration",
-            "Continuous Delivery",
-            "Docker"
-        ],
-        "skills": [
-            "ruby",
-            "rails",
-            "senatra",
-            "sql",
-            "oracle",
-            "python",
-            "html",
-            "css",
-            "javascript",
-            "objective c",
-            "swift",
-            "java",
-            "c#",
-            "mongo db"
-        ],
-        "spoken": [
-            "english",
-            "french",
-            "creole"
-        ]
+  "about": {
+    "name": "Stanley Calixte",
+    "email": "scalixte@gmail.com",
+    "phone": "917-499-5182",
+    "location": "Brooklyn, NY",
+    "portrait": "",
+    "gravatar": "http://www.gravatar.com/avatar/919b316ae2edcd21cc494e439d56b750",
+    "github": [
+      "ducalixte",
+      "scalixte-mdsol"
+    ],
+    "social": [
+      {
+        "network": "email",
+        "account": "scalixte@gmail.com"
+      },
+      {
+        "network": "Location",
+        "account": "Brooklyn, NY"
+      },
+      {
+        "network": "Linkedin",
+        "account": "Stanley Calixte"
+      },
+      {
+        "network": "github",
+        "account": "ducalixte"
+      },
+      {
+        "network": "github",
+        "account": "scalixte-mdsol"
+      }
+    ],
+    "blog": "",
+    "role": "Full Stack Developer",
+    "statement": "Hi, I am Stanley, and I love solving problems.",
+    "key-skills": [
+      "Rails",
+      "Javascript",
+      "Senatra",
+      "Scrum",
+      "Gherkin",
+      "Behavior Driven Development",
+      "Test Driven Development",
+      "Domain Driven Development",
+      "Static Analysis",
+      "Continuous Integration",
+      "Continuous Delivery",
+      "Docker",
+      "Cucumber",
+      "Rspec",
+      "Capybara",
+      "Jasmine",
+      "Protractor",
+      "AngularJS",
+      "ReactJS"
+    ],
+    "skills": [
+      "ruby",
+      "rails",
+      "senatra",
+      "sql",
+      "oracle",
+      "python",
+      "html",
+      "css",
+      "javascript",
+      "objective c",
+      "swift",
+      "java",
+      "c#",
+      "mongo db"
+    ],
+    "spoken": [
+      "english",
+      "french",
+      "creole"
+    ]
+  },
+  "summary": {
+    "title": "Life is #good, knowlege is #awesome",
+    "statement": [
+      "I am an engineer in life and professionally",
+      "I love investigating codes, I see personality in codes, I strive to code better through learning and reading codes",
+      "I am a hard work, my approach is work hard to arrive at a smart yet eloquent solution to a problem.",
+      "I bring a wide variety of skills and professional experiences to a team.",
+      "My goal is to solve problems and make changes that benefit the company, my peers and thus make be a better developer and person."
+    ]
+  },
+  "universities": [
+    {
+      "university": "University of California, San Diego",
+      "location": "La Jolla, CA",
+      "degree": "Electrical Engineer",
+      "years": "2002-2005",
+      "graduated": "June 2005"
     },
-    "summary": {
-        "title": "Life is #good, knowlege is #awesome",
-        "statement": [
-            "I am an engineer in life and professionally",
-            "I love investigating codes, I see personality in codes, I strive to code better through learning and reading codes",
-            "I am a hard work, my approach is work hard to arrive at a smart yet eloquent solution to a problem.",
-            "I bring a wide variety of skills and professional experiences to a team.",
-            "My goal is to solve problems and make changes that benefit the company, my peers and thus make be a better developer and person."
-        ]
+    {
+      "university": "University of California, San Diego",
+      "location": "La Jolla, CA",
+      "degree": "Applied Mathematics",
+      "years": "2002-2005",
+      "graduated": "June 2005"
+    }
+  ],
+  "certifications": [
+    {
+      "university": "University of California, San Diego",
+      "category": "online",
+      "location": "La Jolla, CA",
+      "certification": "Java Programming",
+      "years": "2011-2012"
     },
-    "universities": [
+    {
+      "university": "University of California, San Diego",
+      "category": "online",
+      "location": "La Jolla, CA",
+      "certification": "IOS Programming",
+      "years": "2013-2014"
+    },
+    {
+      "university": "Udacity",
+      "category": "online",
+      "location": "La Jolla, CA",
+      "certification": "Full Stack Web Developer Nanodegree",
+      "years": "2015-Present"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "Medidata Solutions",
+      "role": "Software Developer Engineer in Test",
+      "location": "New York, NY",
+      "period": "December 2013 - Present",
+      "duties": [
+      "Implement and execute automated test scenarios to support development",
+"Assist with the implementation of functional and performance testing for the application",
+"Assist with the development of framework to implement End-to-End and Workflow automation for the application",
+"Assist with the deployment and testing during each deployment and release cycle",
+"Execute integration and regression testing as part of product maintenance and quality assurance of the product",
+"Communicate Defects and issues to appropriate team members and colleagues",
+"Assist with the escalation of defects and concerns as appropriate and necessary"
+      ]
+    },
+    {
+      "company": "Getty Images",
+      "role": "Software Engineer in Test",
+      "location": "New York, NY",
+      "period": "January 2013 - November 2013",
+      "duties": [
+"Implement proprietary test framework for automation testing utilizing knowledge and experience of:",
+"C# - Selenium Web Driver - NUNIT - MS Test - Spec Flow",
+"Update core software to support behavioral driven development practices",
+"Update core site with new JavaScript and C# components for ease in defect tracking.",
+"Update ASP .Net with new functionality to support testing",
+"Implement framework with C#, JavaScript at its core",
+"Implement framework with various design and programming patterns such as:",
+"Singleton - Repository - Factory - Facade - Iterator",
+"",
+"Responsible implementing Jenkins extension with Groovy, Python and Windows Power Shell scripts.",
+"Design and implement codes to support testing web services with  WCF Client and Soap UI",
+"Perform peer to peer code reviews on tests codes and routines",
+"Perform code reviews with Merge Request on Git Lab",
+"",
+"Key Accomplishment:",
+"Hackathon project",
+"Utilize a Raspberry Pi devices as a portal to transfer image from photographer camera to picture desk during lived events.",
+"Incorporate pre-configured IPTC data to image prior to sending to Picture Desk",
+"Daemon service with Python to monitor when an image is received and process the image.",
+"Samba Share allows image to be acquired from any smart phone devices or tablet.",
+"Presented the Hackathon project to team members and later the whole company."
+      ]
+    },
+    {
+      "company": "International Gaming Technology",
+      "role": "Lead Software Developer Engineer in Test",
+      "location": "Las Vegas, NV",
+      "period": "2010-2012",
+      "duties": [
+      "Implement UI Test tools utilizing Object Oriented patterns and knowledge of Rest and XML RPC",
+"Responsible for selecting UI design pattern such as MVVM instead of MVC",
+"Responsible implementing WCF framework to integrate and utilize information and data from various services.",
+"Implement IGT Test Framework to run NUNIT test on game environment",
+"Implement IGT Test Framework agent and service/client to incorporate HP Quality Center (HPC)",
+"Responsible for writing codes on HP Quality Center so that automated tests cases can be run from HPC as well as NUNIT.",
+"Responsible for writing codes to support tests report and RSS Feeds",
+"Maintain existing tools and improved readability of source code.",
+"Perform ad hoc, black box, and white box testing.",
+"",
+"",
+"Key accomplishments",
+"XML Converter: A tool that converts standard game information into manageable instructions to game",
+"IGT Game Automation UI",
+"A UI tool that utilizes IGT Test Framework and other services to instantiate",
+"   - Winning & Losing patterns",
+"   - Gaming Machine behaviors"
+      ]
+      },
+    {
+      "company": "International Gaming Technology",
+      "role": "Software Quality Analyst / Software Developer Engineer in Test",
+      "location": "Las Vegas, NV",
+      "period": "2006-2010",
+      "duties": [
+      "Implement Test Plans: Write Comprehensive Test Plans including Stress Tests and Creative Tests on Software Components in Gaming Devices. Collect Media, Write Scripts and Applications.",
+"Investigate and characterize Bugs: Investigate probable cause for device defects and software bugs. Identify meticulously such bugs or errors, report issues and trends to appropriate developer and make recommendation for fixes and meeting completion dates. Follow through to resolution.",
+"Write QA Reports: Write detailed reports on the various Tests performed on Gaming Devices. Write functional specifications of the hardware and software components. Report Key features of the software. Prepare Documents for Official Jurisdictional Tests.",
+"Key Accomplishments:",
+"Developed JUNIT and NUNIT unit testing modules to test various features on mobile applications designed for either Android or IOS devices.",
+"Developed and Maintained the Product Assurance Wiki page",
+"Created and organize presentations and tutorials to introduce recently hired test engineers and other colleagues to Electronic Game System testing.",
+"Developed Software Automation tools for testing"
+      ]
+    },
+    {
+      "company": "Progressive Gaming Corporation",
+      "role": "Quality Assurance Engineer",
+      "location": "Las Vegas, NV",
+      "period": "2005-2006",
+      "duties": [
+      "Principally my role consisted of assuring that both Hardware and Software system meet industry standards. I verified that the entire Product delivery is functional and ready through various processes including manual and automated tests.",
+      "Designed and Implemented Quality Assurance (QA) Test Plans and Strategies.",
+"Developed and Maintained Test Cases, Test scripts, and Test databases.",
+"Maintained accurate and appropriate records on all Tests performed and related results.",
+"Worked with production and development teams to identify problems and meet deadlines.",
+"Provided project status to Management and Interfaced with company associates to determine appropriate software fixes and meet completion deadlines.",
+"Created quality bug reports and tracked defects from submission through closure during test cycle.",
+"Actively participated in the development of a variety of test suites including functional, regression, usability, stress/load, and other tool types as needed.",
+"Worked to ensure the delivery of high quality, virtually defect-free systems and documentation in a timely manner.",
+"Performed troubleshooting on problems that occurred during testing and assisted others with troubleshooting and support of products.",
+"Effectively planned and followed through for product development."
+]
+    },
+    {
+      "company": "Institute for Non Linear Science (INLS)",
+      "role": "Electrical Engineer",
+      "location": "La Jolla, CA",
+      "period": "2004-2005",
+      "duties":[
+      "Designed simulations and mathematical models of the Turbo-Decoding Algorithm as a non linear dynamical system.",
+"Presented Technical Report of Project Progress at the Engineering Conferences.",
+"Designed Test Templates in C++ and the Matlab Tool Suite for Result Simulations"
+      ]
+      },
+    {
+      "company": "Santa Rosa Junior Computer Information Science",
+      "role": "Computer Technologist",
+      "location": "Santa Rosa, CA",
+      "period": "2000-2002",
+      "duties": [
+      "Assisted in the conceptual and strategic creation of integrated GUI Websites and Web Solutions using HTML, DHTML, CSS and Action Scripts. Provided end-user support resolving complex software, hardware, network implementations, communications, and operating systems issues.",
+      "Provided end-user support resolving complex software, hardware, network implementations, communications, and operating systems issues."
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "address": "Philadelphia, PA"
+    },
+    {
+      "address": "Petaluma, CA"
+    },
+    {
+      "address": "Santa Rosa, CA"
+    },
+    {
+      "address": "San Diego, CA"
+    },
+    {
+      "address": "La Jolla, CA"
+    },
+    {
+      "address": "Las Vegas, NV"
+    },
+    {
+      "address": "New York, NY"
+    }
+  ],
+  "projects": [],
+  "interests": {},
+  "technologies": [
+    {
+      "technology": "operating systems",
+      "technologies": [
         {
-            "university": "University of California, San Diego",
-            "location": "La Jolla, CA",
-            "degree": "Electrical Engineer",
-            "years": "2002-2005",
-            "graduated": "June 2005"
+          "technology": "windows",
+          "technologies": [
+            {
+              "technology": "windows XP",
+              "start": 2008,
+              "last used": ""
+            },
+            {
+              "technology": "windows 2003 Server",
+              "start": 2004,
+              "last used": 2006
+            },
+            {
+              "technology": "windows 2008 Server",
+              "start": 2009,
+              "last used": 2013
+            },
+            {
+              "technology": "windows 7",
+              "start": 2008,
+              "last used": ""
+            },
+            {
+              "technology": "windows 8.1",
+              "start": 2012,
+              "last used": ""
+            }
+          ]
         },
         {
-            "university": "University of California, San Diego",
-            "location": "La Jolla, CA",
-            "degree": "Applied Mathematics",
-            "years": "2002-2005",
-            "graduated": "June 2005"
+          "technology": "linux",
+          "technologies": [
+            {
+              "technology": "Suze Linux",
+              "start": 2001,
+              "last used": ""
+            },
+            {
+              "technology": "Ubuntu Linux",
+              "start": 2008,
+              "last used": ""
+            },
+            {
+              "technology": "Cent Os Linux",
+              "start": 2008,
+              "last used": ""
+            },
+            {
+              "technology": "Arch Linux",
+              "start": 2008,
+              "last used": ""
+            }
+          ]
+        },
+        {
+          "technology": "Apple",
+          "technologies": [
+            {
+              "technology": "Os Maverick",
+              "start": 2013,
+              "last used": 2015
+            },
+            {
+              "technology": "Os Yosemity",
+              "start": 2015,
+              "last used": ""
+            }
+          ]
         }
-    ],
-    "certifications": [
+      ]
+    },
+    {
+      "technology": "database systems",
+      "technologies": [
         {
-            "university": "University of California, San Diego",
-            "category": "online",
-            "location": "La Jolla, CA",
-            "certification": "Java Programming",
-            "years": "2011-2012"
+          "technology": "Microsoft SQL",
+          "technologies": [
+            {
+              "technology": "Microsoft SQL 2003",
+              "start": 2004,
+              "last used": 2009
+            },
+            {
+              "technology": "Microsoft SQL 2008",
+              "start": 2009,
+              "last used": 2012
+            }
+          ]
         },
         {
-            "university": "University of California, San Diego",
-            "category": "online",
-            "location": "La Jolla, CA",
-            "certification": "IOS Programming",
-            "years": "2013-2014"
+          "technology": "SQLLite",
+          "start": 2005,
+          "last used": ""
         },
         {
-            "university": "Udacity",
-            "category": "online",
-            "location": "La Jolla, CA",
-            "certification": "Full Stack Web Developer Nanodegree",
-            "years": "2015-Present"
+          "technology": "MySQL",
+          "start": 2005,
+          "last used": ""
+        },
+        {
+          "technology": "Mongo DB",
+          "start": 2012,
+          "last used": ""
         }
-    ],
-    "experiences": [
+      ]
+    },
+    {
+      "technology": "IDE",
+      "technologies": [
         {
-            "company": "Medidata Solutions",
-            "role": "Software Engineer in Test",
-            "location": "New York, NY",
-            "period": "December 2013 - Present",
-            "duties": ""
+          "technology": "Microsoft Visual Studio",
+          "technologies": [
+            {
+              "technology": "Visual Studio 2005",
+              "start": 2006,
+              "last used": 2009
+            },
+            {
+              "technology": "Visual Studio 2008",
+              "start": 2009,
+              "last used": 2012
+            },
+            {
+              "technology": "Visual Studio 2012",
+              "start": 2012,
+              "last used": ""
+            }
+          ]
         },
         {
-            "company": "Getty Images",
-            "role": "Software Engineer in Test",
-            "location": "New York, NY",
-            "period": "January 2013 - November 2013",
-            "duties": ""
+          "technology": "Eclipse",
+          "start": 2005,
+          "last used": ""
         },
         {
-            "company": "International Gaming Technology",
-            "role": "Lead Software Engineer in Test",
-            "location": "Las Vegas, NV",
-            "period": "2006-2012",
-            "duties": ""
+          "technology": "Netbeans",
+          "start": 2005,
+          "last used": ""
         },
         {
-            "company": "Progressive Gaming Corporation",
-            "role": "Quality Assurance Engineer",
-            "location": "Las Vegas, NV",
-            "period": "2005-2006",
-            "duties": "Principally my role consisted of assuring that both Hardware and Software system meet industry standards. I verified that the entire Product delivery is functional and ready through various processes including manual and automated tests."
+          "technology": "XCode",
+          "start": 2012,
+          "last used": ""
         },
         {
-            "company": "Santa Rosa Junior Computer Information Science",
-            "role": "Computer Technologist",
-            "location": "Santa Rosa, CA",
-            "period": "2000-2002",
-            "duties": "Assisted in the conceptual and strategic creation of integrated GUI Websites and Web Solutions using HTML, DHTML, CSS and Action Scripts. Provided end-user support resolving complex software, hardware, network implementations, communications, and operating systems issues."
+          "technology": "Sublime",
+          "start": 2012,
+          "last used": ""
+        },
+        {
+          "technology": "BlueFish",
+          "start": 2005,
+          "last used": ""
+        },
+        {
+          "technology": "Ruby Mine",
+          "start": 2013,
+          "last used": ""
         }
-    ],
-    "locations": [
+      ]
+    },
+    {
+      "technology": "Software Development tools",
+      "technologies": [
         {
-            "address": "Philadelphia, PA"
-        },{
-            "address": "Petaluma, CA"
-        },{
-            "address": "Santa Rosa, CA"
-        },{
-            "address": "San Diego, CA"
-        },{
-            "address": "La Jolla, CA"
-        },{
-            "address": "Las Vegas, NV"
-        },{
-            "address": "New York, NY"
-        },{
-            "address": "Port-au-Prince, Haiti"
+          "technology": "Gihub",
+          "start": 2009,
+          "last used": ""
+        },
+        {
+          "technology": "Sumo Logic",
+          "start": 2012,
+          "last used": ""
         }
-    ],
-    "projects": [],
-    "interests": {},
-    "technologies": {}
+      ]
+    },
+    {
+      "technology": "Software Integration tools",
+      "technologies": [
+        {
+          "technology": "Jenkins",
+          "start": 2009,
+          "last used": ""
+        },
+        {
+          "technology": "Github",
+          "start": 2009,
+          "last used": ""
+        }
+      ]
+    }
+  ],
+  "programming skills": [
+    {
+      "language": "java",
+      "start": 2001,
+      "last used": 2011,
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "C#",
+      "start": 2005,
+      "last used": 2012,
+      "last project": "Software system franework with Selenium for Continuous Integration through jenkine."
+    },
+    {
+      "language": "Ruby",
+      "start": 2012,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Rails",
+      "start": 2012,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Python",
+      "start": 2009,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Javascript",
+      "start": 2012,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "HTML/CSS",
+      "start": 2001,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "C++",
+      "start": 2001,
+      "last used": 2009,
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "C",
+      "start": 2001,
+      "last used": 2009,
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Objective C",
+      "start": 2012,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Swift",
+      "start": 2014,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    },
+    {
+      "language": "Scala",
+      "start": 2012,
+      "last used": "",
+      "last project": "media inventory system with mysql database."
+    }
+  ]
 }

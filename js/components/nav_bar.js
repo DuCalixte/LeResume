@@ -12,18 +12,22 @@ var NavBar = React.createClass({
 		var navs = [
 			{
 				"field": "Work Experience",
-				"link": "#"
+				"link": "#experience"
 			},
 			{
 				"field": "Education",
-				"link": "#"
+				"link": "#education"
 			},
 			{
 				"field": "Skills in Time",
-				"link": "#"
+				"link": "#skills"
 			},
 			{
-				"field": "Past Location",
+				"field": "Past Locations",
+				"link": "#locations"
+			},
+			{
+				"field": "Projects",
 				"link": "#"
 			}
 		];

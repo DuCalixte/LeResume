@@ -1,0 +1,45 @@
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+    padding-left: 100px;
+    /*padding-bottom: 20px;*/
+    /*margin-bottom: 20px;*/
+}
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+
+.centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered-text {
+	float: none;
+    text-align: center;
+}
+
+.top-text {
+	padding-bottom: 0px;
+}
+
+.right-text {
+	float: right;
+    text-align: right;
+    padding-right: 0px;
+}
+
+.description{
+	padding-bottom: 5px;
+	overflow: auto;
+	overflow-y: scroll;
+}

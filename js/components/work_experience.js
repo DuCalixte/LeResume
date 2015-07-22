@@ -7,30 +7,44 @@ var WorkExperience = React.createClass({
 	render: function(){
 		var self = this;
 		return (
-			<div className="panel-group">
-				<div className="panel-heading"><h3 className="panel-title">Work Experience</h3></div>
+			<div id="experience">
+				<div className="page-header"><h3>Work Experience</h3></div>
+				<section className="ac-container">
 					{this.props.experiences.map(function(experience, index){
-						var _class = (index === 0 ? "panel panel-primary" : "panel panel-default");
-						return <Experience klass={_class} experience={experience}/>;
+						var id = "ac-" + (index + 1);
+						var name = "accordion-" + (index + 1);
+						return <Experience id={id} name={name} experience={experience} />;
 					})}
+				</section>
 			</div>
 		);
 	}
 });
 
 var Experience = React.createClass({
+	getInitialState: function(){
+		return { checked: false };
+	},
+	clicked: function(status){
+		this.setState({checked: status});
+	},
 	render: function(){
 		var experience = this.props.experience;
+		var self = this;
 		return (
-			<div className={this.props.klass}>
-				<div className="panel-heading"><h3 className="panel-title">{experience.company} - {experience.role}</h3></div>
-				<div className="panel-body">
-					<span>
-						<small className="float-left text-left">{experience.period}</small>
-						<small className="float-right text-right">{experience.location}</small>
-					</span>
-					<span><p className="description">{experience.duties}</p></span>
-				</div>
+			<div>
+				<input id={this.props.id} name={this.props.name} type="radio" checked={self.state.checked}  />
+					<label for="{this.props.id}" onClick={self.clicked.bind(self, !self.state.checked)}>{experience.company} - {experience.role}</label>
+					<article className="ac-large"><div className="container">
+						<span className="top-text"><strong>
+							<small className="float-left text-left">{experience.period}</small>
+							<small className="right-text">{experience.location}</small>
+						</strong></span>
+						<div className="description">
+						<span><br /><br />{(function(duties){var rows=[]; for(index in duties){rows.push(<p className="duty">{duties[index]}</p>)}return rows})(experience.duties)}
+						</span></div>
+						</div>
+					</article>
 			</div>
 		);
 	}

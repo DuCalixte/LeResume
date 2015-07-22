@@ -11,9 +11,12 @@ var Education = React.createClass({
 	render: function(){
 		var self = this;
 		return (
-			<div className="panel-group">
-				<Universities universities={this.props.universities} />
-				<Certifications certifications={this.props.certifications} />
+			<div id="education">
+				<div className="page-header"><h3>Education</h3></div>
+				<div className="panel-group">
+					<Universities universities={this.props.universities} />
+					<Certifications certifications={this.props.certifications} />
+				</div>
 			</div>
 		);
 	}
@@ -24,7 +27,8 @@ var Universities = React.createClass({
 		var universities = this.props.universities;
 		return(
 			<div className="panel panel-default">
-				<div className="panel-heading page-header"><h3>Education: <small>Degrees</small></h3></div><div className="panel-body">
+				<div className="panel-heading"><h3>Education: <small>Degrees</small></h3></div>
+				<div className="panel-body">
 				{universities.map(function(university, index){
 					return <div><span><strong>{university.degree}</strong> - {university.university} - {university.graduated}</span></div>;
 				})}
@@ -38,7 +42,8 @@ var Certifications = React.createClass({
 		var certifications = this.props.certifications;
 		return(
 			<div className="panel panel-default">
-				<div className="panel-heading page-header"><h3>Education: <small>Certifications</small></h3></div><div className="panel-body">
+				<div className="panel-heading"><h3>Education: <small>Certifications</small></h3></div>
+				<div className="panel-body">
 				{certifications.map(function(certification, index){
 					return <div><span><strong>{certification.certification}</strong> - {certification.university} - {certification.years}</span></div>;
 				})}
