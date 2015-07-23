@@ -1,0 +1,6 @@
+.fix-col li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2% 1%;
+    font-size: 10px;    
+}
