@@ -1885,12 +1885,14 @@
                 .style("font-family", function(d) {
                     return pie.options.tooltips.styles.font;
                 })
+                .style("word-wrap", function(d) { return pie.options.tooltips.styles.wordWrap; })
                 .text(function(d, i) {
                     var caption = pie.options.tooltips.string;
                     if (pie.options.tooltips.type === "caption") {
                         caption = d.caption;
                     }
                     return tt.replacePlaceholders(pie, caption, i, {
+                        statement: d['last project'],
                         label: d.label,
                         value: d.value,
                         percentage: segments.getPercentage(pie, i, pie.options.labels.percentage.decimalPlaces)
