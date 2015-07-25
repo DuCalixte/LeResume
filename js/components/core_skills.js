@@ -26,7 +26,7 @@ var CoreSkills = React.createClass({
 		];
 		return (
 			<div className="container" id="skills">
-				<div className="text-center">
+				<div className="text-center graph-container">
 				{(function(data){
 									var rows = [];
 									for (i in data){
