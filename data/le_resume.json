@@ -21,15 +21,18 @@
       },
       {
         "network": "Linkedin",
-        "account": "Stanley Calixte"
+        "account": "Stanley Calixte",
+        "link": "https://www.linkedin.com/pub/stanley-calixte/85/804/2b4"
       },
       {
         "network": "github",
-        "account": "ducalixte"
+        "account": "ducalixte",
+        "link": "https://github.com/ducalixte"
       },
       {
         "network": "github",
-        "account": "scalixte-mdsol"
+        "account": "scalixte-mdsol",
+        "link": "https://github.com/scalixte-mdsol"
       }
     ],
     "blog": "",
@@ -162,14 +165,7 @@
 "Design and implement codes to support testing web services with  WCF Client and Soap UI",
 "Perform peer to peer code reviews on tests codes and routines",
 "Perform code reviews with Merge Request on Git Lab",
-"",
-"Key Accomplishment:",
-"Hackathon project",
-"Utilize a Raspberry Pi devices as a portal to transfer image from photographer camera to picture desk during lived events.",
-"Incorporate pre-configured IPTC data to image prior to sending to Picture Desk",
-"Daemon service with Python to monitor when an image is received and process the image.",
-"Samba Share allows image to be acquired from any smart phone devices or tablet.",
-"Presented the Hackathon project to team members and later the whole company."
+""
       ]
     },
     {
@@ -187,14 +183,7 @@
 "Responsible for writing codes to support tests report and RSS Feeds",
 "Maintain existing tools and improved readability of source code.",
 "Perform ad hoc, black box, and white box testing.",
-"",
-"",
-"Key accomplishments",
-"XML Converter: A tool that converts standard game information into manageable instructions to game",
-"IGT Game Automation UI",
-"A UI tool that utilizes IGT Test Framework and other services to instantiate",
-"   - Winning & Losing patterns",
-"   - Gaming Machine behaviors"
+""
       ]
       },
     {
@@ -205,12 +194,7 @@
       "duties": [
       "Implement Test Plans: Write Comprehensive Test Plans including Stress Tests and Creative Tests on Software Components in Gaming Devices. Collect Media, Write Scripts and Applications.",
 "Investigate and characterize Bugs: Investigate probable cause for device defects and software bugs. Identify meticulously such bugs or errors, report issues and trends to appropriate developer and make recommendation for fixes and meeting completion dates. Follow through to resolution.",
-"Write QA Reports: Write detailed reports on the various Tests performed on Gaming Devices. Write functional specifications of the hardware and software components. Report Key features of the software. Prepare Documents for Official Jurisdictional Tests.",
-"Key Accomplishments:",
-"Developed JUNIT and NUNIT unit testing modules to test various features on mobile applications designed for either Android or IOS devices.",
-"Developed and Maintained the Product Assurance Wiki page",
-"Created and organize presentations and tutorials to introduce recently hired test engineers and other colleagues to Electronic Game System testing.",
-"Developed Software Automation tools for testing"
+"Write QA Reports: Write detailed reports on the various Tests performed on Gaming Devices. Write functional specifications of the hardware and software components. Report Key features of the software. Prepare Documents for Official Jurisdictional Tests."
       ]
     },
     {
@@ -481,73 +465,85 @@
       "language": "java",
       "start": 2001,
       "last used": 2011,
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 3
     },
     {
       "language": "C#",
       "start": 2005,
       "last used": 2012,
-      "last project": "Software system franework with Selenium for Continuous Integration through jenkine."
+      "last project": "Software system franework with Selenium for Continuous Integration through jenkine.",
+      "expertise": 4
     },
     {
       "language": "Ruby",
       "start": 2012,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 4
     },
     {
       "language": "Rails",
       "start": 2012,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 4
     },
     {
       "language": "Python",
       "start": 2009,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 3
     },
     {
       "language": "Javascript",
       "start": 2012,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 3
     },
     {
       "language": "HTML/CSS",
       "start": 2001,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 4
     },
     {
       "language": "C++",
       "start": 2001,
       "last used": 2009,
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 4
     },
     {
       "language": "C",
       "start": 2001,
       "last used": 2009,
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 4
     },
     {
       "language": "Objective C",
       "start": 2012,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 3
     },
     {
       "language": "Swift",
       "start": 2014,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 2
     },
     {
       "language": "Scala",
       "start": 2012,
       "last used": "",
-      "last project": "media inventory system with mysql database."
+      "last project": "media inventory system with mysql database.",
+      "expertise": 3
     }
   ]
 }

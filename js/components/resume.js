@@ -18,11 +18,13 @@ var Resume = React.createClass({
     getInitialState: function() {
         return {data: []};
     },
-    componentWillMount: function() {
+    componentDidMount: function() {
         this.loadResumeData();
     },
 	render: function(){
-        var data=this.state.data;
+        var self = this;
+        if (Object.keys(this.state.data).length != 0){
+            var data=self.state.data;
 		return (
         <div className="main container-fluid" url={this.props.url}>
             <About about={data.about} />
@@ -32,5 +34,9 @@ var Resume = React.createClass({
             <CoreSkills technologies={data.technologies} skills={data["programming skills"]} />
             <LivingLocations locations={data.locations} />
         </div>);
+    }
+    else{
+        return null;
+    }
 	}
 });
