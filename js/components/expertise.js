@@ -50,6 +50,23 @@ var Expertise = React.createClass({
     	var x = barSvg.append("g")
             .attr("class", "x-axis");
 
+    	// Prep the tooltip bits, initial display is hidden
+		var tooltip = barSvg.append("g")
+			.attr("class", "tooltip")
+		  	.style("display", "none");
+		    
+		tooltip.append("rect")
+		  	.attr("width", 30)
+		  	.attr("height", 20)
+		  	.attr("fill", "white")
+		  	.style("opacity", 0.5);
+		tooltip.append("text")
+		  	.attr("x", 15)
+		  	.attr("dy", "1.2em")
+		  	.style("text-anchor", "middle")
+		  	.attr("font-size", "12px")
+		  	.attr("font-weight", "bold");
+
 		(function(data){
 			var xMax = d3.max(data, function(d) { return d.expertise; } );
         	var xMin = 0;
@@ -63,7 +80,8 @@ var Expertise = React.createClass({
             .text("Expertise in Software language and framework")
             .attr("class", "title");
 
-            var groups = barSvg.append("g").attr("class", "labels")
+            var groups = barSvg.append("g")
+            	.attr("class", "labels")
              	.selectAll("text")
                	.data(data)
              	.enter()
@@ -86,16 +104,33 @@ var Expertise = React.createClass({
                     .attr("x", xScale(xMin))
                     .attr("y", function(d) { return yScale(d.language); })
                     .style("fill", function(d) { return color(d.expertise); })
-                    .attr("id", function(d,i) { return "bar"+i; });
+                    .attr("id", function(d,i) { return "bar"+i; })
+                    .on("mouseover", function() { tooltip.style("display", "block"); })
+				  	.on("mouseout", function() { tooltip.style("display", "block"); })
+				  	.on("mousemove", function(d) {
+					    var xPosition = d3.mouse(this)[0] - 15;
+					    var yPosition = d3.mouse(this)[1] - 25;
+					    tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+					    tooltip.select("text").text(d.language);
+ 					});
 
         	groups.append("text")
                 .attr("x", function(d) { return xScale(d.expertise); })
                 .attr("y", function(d) { return yScale(d.language); })
                 .text(function(d) { return categories[d.expertise -1]; })
+                .attr("fill", "white")
                 .attr("text-anchor", "end")
                 .attr("dy", "1.2em")
                 .attr("dx", "-.32em")
-                .attr("id", "precise-value");
+                .attr("id", "precise-value")
+     //                .on("mouseover", function() { tooltip.style("display", null); })
+				 //  	.on("mouseout", function() { tooltip.style("display", "none"); })
+				 //  	.on("mousemove", function(d) {
+					//     var xPosition = d3.mouse(this)[0] - 15;
+					//     var yPosition = d3.mouse(this)[1] - 25;
+					//     tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
+					//     tooltip.select("text").text(d.language);
+					// });
 
 		})(this.props.skills);
     },
