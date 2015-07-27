@@ -25,7 +25,12 @@ var About = React.createClass({
 					<div className="social">
 						<ul className="list-inline">
 							{social.map(function(connect,i){
-								return <li><span><small>{connect.network}</small><mark><strong>{connect.account}</strong></mark></span></li>;
+								if (connect.hasOwnProperty('link')){
+									return <li><span><small>{connect.network}</small><mark><strong><a href={connect.link}>{connect.account}</a></strong></mark></span></li>;
+								}
+								else{
+									return <li><span><small>{connect.network}</small><mark><strong>{connect.account}</strong></mark></span></li>;
+								}
 							})}
 						</ul>
 					</div>

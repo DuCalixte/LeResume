@@ -20,3 +20,27 @@
 .graph-container {
 	width: 90%;
 }
+
+.page-item {
+    width: 90%;
+}
+
+@media(max-width:500px) {
+        .page-item {
+            width: 450px;
+            height: 500px;
+        }
+		#skills {
+			width: 410px;
+		}
+        .graph-container {
+            width: 400px;
+        }
+        .show-container {
+            width: 390px;
+        }
+        #canvas {
+            width: 380px;
+            height: auto;
+        }
+    }

@@ -100,7 +100,7 @@ var ProgrammingSkills = React.createClass({
     			}
     		},
     		tooltips: {
-    			enabled: true,
+    			enabled: false,
     			type: "placeholder",
     			string: "{label} - Last project: {statement}",
     			styles: {
@@ -151,12 +151,13 @@ var ProgrammingSkills = React.createClass({
     		}
     	};
     },
-	render: function(){
+    componentDidMount: function() {
 		this.parseData();
 		this.createFullPie();
+		var pie = new d3pie(React.findDOMNode(this), this.createFullPie());  	
+    },
+	render: function(){
 		var self = this;
-		var pie = new d3pie("fullPie", this.createFullPie());
-
 		return(
 			<div className={self.props.klass} id="fullPie" />
 			);

@@ -5,7 +5,8 @@ var CoreSkills = React.createClass({
 	getDefaultProps: function() {
         return {
         	technologies: [],
-        	skills: []
+        	skills: [],
+        	// content: []
         };
     },
 	getInitialState: function(){
@@ -19,10 +20,11 @@ var CoreSkills = React.createClass({
 	},
 	render: function(){
 		var self = this;
+		// var content = this.props.content;
 		var content = [
 			{"container": <ProgrammingSkills skills={this.props.skills} klass={this.setShowHide(0)}/>, "name": "Developer Skills"},
-			{"container": <div className={this.setShowHide(1)}>Two</div>, "name": "Software Skills"},
-			{"container": <div className={this.setShowHide(2)}>Three</div>, "name": "Experience"}
+			{"container": <TechnologySkills technologies={this.props.technologies} klass={this.setShowHide(1)}/>, "name": "Software Skills"},
+			{"container": <Expertise skills={this.props.skills} klass={this.setShowHide(2)}/>, "name": "Language Expertise"}
 		];
 		return (
 			<div className="container" id="skills">
