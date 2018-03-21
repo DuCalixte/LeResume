@@ -1,0 +1,38 @@
+div.wobbly-text {
+  h2 {
+    font-size: 3em;
+  }
+
+  span.empty{
+  }
+
+  span.wobbly {
+    font-family: 'Manbow Tone';
+    display: inline-block;
+    position: relative;
+    animation: animateWobbly 5s infinite;
+
+    &:nth-child(4n) {
+      animation-delay: 0s;
+    }
+
+    &:nth-child(4n-1) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(4n-3) {
+      animation-delay: 4s;
+    }
+
+    &:nth-child(4n-2) {
+      animation-delay: 6s;
+    }
+  }
+
+  @keyframes animateWobbly {
+  0% { transform: rotate(0deg); }
+	25% { transform: rotate(-20deg); }
+	75% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
+}

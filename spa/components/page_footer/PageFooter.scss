@@ -1,0 +1,23 @@
+.page-footer-component {
+  &.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 200px;
+    background-color: #f5f5f5;
+  }
+  .brand-style {
+    padding-left: 30px;
+  }
+  .nav-style {
+    padding-right: 20px;
+
+    // .active {
+    //   text-decoration: underline;
+    //   text-decoration-color: #cdc;
+    // }
+  }
+
+
+}

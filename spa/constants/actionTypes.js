@@ -1,0 +1,5 @@
+export const LOAD_PROFILE = 'LOAD_PROFILE';
+
+export const LOAD_INFORMATION = 'LOAD_INFORMATION';
+
+export const LOAD_CAREERS = 'LOAD_CAREERS';
